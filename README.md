@@ -1,10 +1,5 @@
 # Well-being in European Regions (R)
 
-![R](https://img.shields.io/badge/R-4.x-276DC3?logo=r&logoColor=white)
-![tidyverse](https://img.shields.io/badge/dplyr%20%C2%B7%20ggplot2-1A162D?logo=tidyverse&logoColor=white)
-![Methods](https://img.shields.io/badge/methods-non--parametric%20tests%20%C2%B7%20bootstrap-8A2BE2)
-![Data](https://img.shields.io/badge/data-OECD%20Regional%20Well--Being-0A9EDC)
-
 Statistical analysis of well-being indicators across European regions (education, jobs, income, health, safety, environment, civic life and life satisfaction), followed by hypothesis testing, bootstrap confidence intervals and a small random-number simulation study.
 
 Group project for *Statistics and Data Science Lab* (Instituto Superior Técnico, 2025).
