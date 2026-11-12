@@ -1,8 +1,15 @@
 # Well-being in European Regions (R)
 
+![R](https://img.shields.io/badge/R-4.x-276DC3?logo=r&logoColor=white)
+![tidyverse](https://img.shields.io/badge/dplyr%20%C2%B7%20ggplot2-1A162D?logo=tidyverse&logoColor=white)
+![Methods](https://img.shields.io/badge/methods-non--parametric%20tests%20%C2%B7%20bootstrap-8A2BE2)
+![Data](https://img.shields.io/badge/data-OECD%20Regional%20Well--Being-0A9EDC)
+
 Statistical analysis of well-being indicators across European regions (education, jobs, income, health, safety, environment, civic life and life satisfaction), followed by hypothesis testing, bootstrap confidence intervals and a small random-number simulation study.
 
 Group project for *Statistics and Data Science Lab* (Instituto Superior Técnico, 2025).
+
+![Spread of 13 well-being indicators across European regions](figures/indicators.png)
 
 ## Questions
 
@@ -18,6 +25,8 @@ Group project for *Statistics and Data Science Lab* (Instituto Superior Técnico
 - **Unemployment:** differs strongly between subregions (Kruskal–Wallis, p < 0.001). Southeast Europe has the highest rates; Scandinavia and Central Europe the lowest.
 - **Bootstrap:** the hand-written bootstrap-t intervals for life expectancy match the `boot` package to within 0.03 years.
 - **Simulation:** both Rayleigh generators pass the Kolmogorov–Smirnov test (p > 0.05).
+
+![Histogram of simulated Rayleigh values against the theoretical density](figures/rayleigh.png)
 
 ## What the analysis covers
 
@@ -38,6 +47,8 @@ source("rayleigh_simulation.R")
 ```
 
 **Data:** the analysis uses a spreadsheet extracted from the [OECD Regional Well-Being](https://www.oecdregionalwellbeing.org/) database, provided by the course. It is not included in this repository. To run the analysis, place it at `data/BemEstarEuropa.xlsx`; its Portuguese column names are renamed to English when it is loaded. `rayleigh_simulation.R` needs no data.
+
+The figures in this README are drawn by `figures/make_figures.py` from the summary statistics in the project report, since the spreadsheet itself is not included.
 
 ## Authors
 
