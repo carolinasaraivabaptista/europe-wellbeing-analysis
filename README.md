@@ -48,7 +48,7 @@ source("rayleigh_simulation.R")
 
 **Data:** the analysis uses a spreadsheet extracted from the [OECD Regional Well-Being](https://www.oecdregionalwellbeing.org/) database, provided by the course. It is not included in this repository. To run the analysis, place it at `data/BemEstarEuropa.xlsx`; its Portuguese column names are renamed to English when it is loaded. `rayleigh_simulation.R` needs no data.
 
-The figures in this README are drawn by `figures/make_figures.py` from the summary statistics in the project report, since the spreadsheet itself is not included.
+The figures in this README are drawn by `figures/make_figures.py`: the indicator chart uses the summary statistics from the project report (the spreadsheet itself is not included), and the Rayleigh chart is a Python port of the simulation.
 
 ## Authors
 
